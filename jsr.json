@@ -1,0 +1,9 @@
+{
+  "name": "AuthenticatedLeafSyncServer",
+  "version": "0.1.0",
+  "exports": {
+    ".": "./src/peer.ts",
+    "./localAuth": "./src/localAuth.ts"
+  },
+  "license": "MIT or APACHE-2.0"
+}

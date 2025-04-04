@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "@muni-town/leaf": "jsr:@muni-town/leaf@^0.2.0-preview.12"
+  }
+}

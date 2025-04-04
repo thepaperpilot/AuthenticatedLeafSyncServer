@@ -1,0 +1,16 @@
+{
+  "name": "authenticatedLeafSyncServer",
+  "version": "0.1.0",
+  "description": "A server that syncs leaf entities that requires authentication for updating entities.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "syncserver": "PORT=8095 DB_FILE=./data/syncserver.sqlite deno run -A --unstable-kv src/sync1/ws-server.ts"
+  },
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "arktype": "^2.1.9",
+    "bcrypt": "^5.1.1"
+  }
+}
