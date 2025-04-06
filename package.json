@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@types/bcrypt": "^5.0.2",
-    "arktype": "^2.1.9",
     "bcrypt": "^5.1.1",
     "itty-router": "^5.0.18"
   }

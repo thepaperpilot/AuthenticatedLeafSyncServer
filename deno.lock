@@ -683,7 +683,6 @@
     "packageJson": {
       "dependencies": [
         "npm:@types/bcrypt@^5.0.2",
-        "npm:arktype@^2.1.9",
         "npm:bcrypt@^5.1.1",
         "npm:itty-router@^5.0.18"
       ]
