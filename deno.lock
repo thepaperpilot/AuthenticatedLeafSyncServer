@@ -2,7 +2,9 @@
   "version": "4",
   "specifiers": {
     "jsr:@muni-town/leaf@~0.2.0-preview.12": "0.2.0-preview.12",
+    "jsr:@std/assert@^1.0.12": "1.0.12",
     "jsr:@std/fs@1.0.10": "1.0.10",
+    "jsr:@std/internal@^1.0.6": "1.0.6",
     "jsr:@std/path@1.0.8": "1.0.8",
     "jsr:@std/path@^1.0.8": "1.0.8",
     "npm:@automerge/automerge-repo-storage-indexeddb@^1.2.1": "1.2.1",
@@ -12,7 +14,9 @@
     "npm:base32-decode@1": "1.0.0",
     "npm:base32-encode@2": "2.0.0",
     "npm:bcrypt@^5.1.1": "5.1.1",
+    "npm:itty-router@^5.0.18": "5.0.18",
     "npm:loro-crdt@^1.4.6": "1.4.6",
+    "npm:node-gyp-build-optional-packages@5.1.1": "5.1.1",
     "npm:svelte@^5.23.0": "5.25.6_acorn@8.14.1"
   },
   "jsr": {
@@ -30,11 +34,20 @@
         "npm:svelte"
       ]
     },
+    "@std/assert@1.0.12": {
+      "integrity": "08009f0926dda9cbd8bef3a35d3b6a4b964b0ab5c3e140a4e0351fbf34af5b9a",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
     "@std/fs@1.0.10": {
       "integrity": "bf041f9d7a0a460817f0421be8946d0e06011b3433e6c83a215628de5e3c7c2c",
       "dependencies": [
         "jsr:@std/path@^1.0.8"
       ]
+    },
+    "@std/internal@1.0.6": {
+      "integrity": "9533b128f230f73bd209408bb07a4b12f8d4255ab2a4d22a1fd6d87304aca9a4"
     },
     "@std/path@1.0.8": {
       "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
@@ -413,6 +426,9 @@
         "@types/estree"
       ]
     },
+    "itty-router@5.0.18": {
+      "integrity": "sha512-mK3ReOt4ARAGy0V0J7uHmArG2USN2x0zprZ+u+YgmeRjXTDbaowDy3kPcsmQY6tH+uHhDgpWit9Vqmv/4rTXwA=="
+    },
     "locate-character@3.0.0": {
       "integrity": "sha512-SW13ws7BjaeJ6p7Q6CO2nchbYEc3X3J6WrmTTDto7yMPqVSZTUyY5Tjbid+Ab8gLnATtygYtiDIJGQRRn2ZOiA=="
     },
@@ -661,13 +677,15 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@muni-town/leaf@~0.2.0-preview.12"
+      "jsr:@muni-town/leaf@~0.2.0-preview.12",
+      "jsr:@std/assert@^1.0.12"
     ],
     "packageJson": {
       "dependencies": [
         "npm:@types/bcrypt@^5.0.2",
         "npm:arktype@^2.1.9",
-        "npm:bcrypt@^5.1.1"
+        "npm:bcrypt@^5.1.1",
+        "npm:itty-router@^5.0.18"
       ]
     }
   }

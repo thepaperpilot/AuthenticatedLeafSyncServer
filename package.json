@@ -6,11 +6,13 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "syncserver": "PORT=8095 DB_FILE=./data/syncserver.sqlite deno run -A --unstable-kv src/sync1/ws-server.ts"
+    "syncserver": "PORT=8095 DB_FILE=./data/syncserver.sqlite deno run -A --unstable-kv src/index.ts",
+    "test": "deno test --allow-read --allow-env --allow-ffi --unstable-kv --allow-write --allow-net"
   },
   "dependencies": {
     "@types/bcrypt": "^5.0.2",
     "arktype": "^2.1.9",
-    "bcrypt": "^5.1.1"
+    "bcrypt": "^5.1.1",
+    "itty-router": "^5.0.18"
   }
 }

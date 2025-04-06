@@ -1,5 +1,7 @@
 {
+  "nodeModulesDir": "auto",
   "imports": {
-    "@muni-town/leaf": "jsr:@muni-town/leaf@^0.2.0-preview.12"
+    "@muni-town/leaf": "jsr:@muni-town/leaf@^0.2.0-preview.12",
+    "@std/assert": "jsr:@std/assert@^1.0.12"
   }
 }
