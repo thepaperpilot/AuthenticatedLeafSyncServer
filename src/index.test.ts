@@ -1,4 +1,4 @@
-import { assertExists, assertRejects, fail } from "@std/assert";
+import { assertExists, assertRejects } from "@std/assert";
 import {
   addUser,
   closeUsersKv,

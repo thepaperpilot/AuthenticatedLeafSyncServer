@@ -90,7 +90,6 @@ if (import.meta.main) {
   } else if (command === "remove_user" && args.length >= 1) {
     removeUser(args[0]);
   } else {
-    console.log("port", Deno.env.get("PORT"));
     const port = parseInt(Deno.env.get("PORT") || "8000");
     const dbFile = Deno.env.get("DB_FILE") || "./data.sqlite";
 
