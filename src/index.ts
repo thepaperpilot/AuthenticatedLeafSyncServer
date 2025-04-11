@@ -84,7 +84,7 @@ export async function startServer(opts: { port: number; dbFile: string }) {
 }
 
 if (import.meta.main) {
-  const [command, ...args] = Deno.args[0];
+  const [command, ...args] = Deno.args;
   if (command === "add_user" && args.length >= 2) {
     addUser(args[0], args[1]);
   } else if (command === "remove_user" && args.length >= 1) {
